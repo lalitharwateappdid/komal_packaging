@@ -25,6 +25,6 @@ class ContactLeadController extends Controller
 
         return response([
             "status" => true
-        ],200)-with("message","Form Submitted Successfully");
+        ],200);
     }
 }
