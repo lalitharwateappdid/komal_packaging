@@ -34,6 +34,7 @@
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="{{asset("assets/css/style.css")}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @yield("page-style")
   </head>
   <body>
     <!-- top-notification start -->
@@ -123,7 +124,7 @@
                 <!-- header logo start -->
                 <div class="header-element logo">
                   <a href="index.html" class="theme-header-logo">
-                    <img src="img/logo/logo.png" class="img-fluid" alt="logo">
+                    <img src="https://fplogoimages.withfloats.com/tile/5d64d4075a899b000169014c.jpeg" width="50px"  class="img-fluid" alt="logo">
                   </a>
                 </div>
                 <!-- header logo end -->
@@ -137,339 +138,30 @@
                   <div class="mainwrap collapse show" id="main-collapse">
                     <ul class="main-menu">
                       <li class="menu-link">
-                        <a href="index.html" class="link-title">
+                        <a href="{{route("home")}}" class="link-title">
                           <span class="sp-link-title">Home</span>
-                          <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
                         </a>
-                        <a href="#desk-home" data-bs-toggle="collapse" class="link-title link-title-lg">
-                          <span class="sp-link-title">Home</span>
-                          <span class="menu-arrow"><i class="fa fa-angle-down"></i></span>
+                      </li>
+
+                      <li class="menu-link">
+                        <a href="{{route('about')}}" class="link-title">
+                          <span class="sp-link-title">About</span>
                         </a>
-                        <div class="menu-dropdown single-menu collapse" id="single-collapse-home">
-                          <ul class="container ul p-0">
-                            <li class="singlemenu-li">
-                              <a href="index.html" class="singlelink-title">
-                                <span class="sp-link-title">Packaging</span>
-                              </a>
-                            </li>
-                            <li class="singlemenu-li">
-                              <a href="index2.html" class="singlelink-title">
-                                <span class="sp-link-title">Electronic</span>
-                              </a>
-                            </li>
-                            <li class="singlemenu-li">
-                              <a href="index3.html" class="singlelink-title">
-                                <span class="sp-link-title">Halloween</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
                       </li>
                       <li class="menu-link">
-                        <a href="collection.html" class="link-title">
+                        <a href="{{route("product")}}" class="link-title">
                           <span class="sp-link-title">Product
-                            <span class="label">sale</span>
+                            
                           </span>
-                          <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
                         </a>
-                        <a href="#desk-single-product" data-bs-toggle="collapse" class="link-title link-title-lg">
-                          <span class="sp-link-title">Product</span>
-                          <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                        </a>
-                        <div class="menu-dropdown product-menu collapse" id="single-collapse-2">
-                          <ul class="container ul p-0">
-                            <li class="productlink-li">
-                              <a href="" class="productlink-title">
-                                <span class="sp-link-title">Product page</span>
-                              </a>
-                              <a href="#productsup-collapse-1" data-bs-toggle="collapse"
-                                class="productlink-title productlink-title-lg">
-                                <span class="sp-link-title">Product page</span>
-                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                              </a>
-                              <ul class="productsupmenu-dropdown collapse" id="productsup-collapse-1">
-                                <li class="productsupmenu-li">
-                                  <a href="product-template.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Product layout</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="product-template2.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Product tab</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="product-template3.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Product advance</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="product-template4.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Product accordion</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="product-template5.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Product center</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="product-template6.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Product sticky</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="product-template7.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Product side</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="productlink-li">
-                              <a href="collection.html" class="product-img banner-img banner-hover">
-                                <img src="img/menu/menu-banner-01.jpg" class="img-fluid" alt="menu-banner-01">
-                              </a>
-                            </li>
-                            <li class="productlink-li">
-                              <a href="" class="product-img banner-img banner-hover">
-                                <img src="img/menu/menu-banner-02.jpg" class="img-fluid" alt="menu-banner-02">
-                              </a>
-                            </li>
-                            <li class="productlink-li">
-                              <a href="" class="productlink-title">
-                                <span class="sp-link-title">Shop page</span>
-                              </a>
-                              <a href="#productsup-collapse-2" data-bs-toggle="collapse"
-                                class="productlink-title productlink-title-lg">
-                                <span class="sp-link-title">Shop page</span>
-                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                              </a>
-                              <ul class="productsupmenu-dropdown collapse" id="productsup-collapse-2">
-                                <li class="productsupmenu-li">
-                                  <a href="collection-without.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Collection</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="collection.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Collection left</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="collection-right.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Collection right</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="collection-list-without.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Collection list</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="collection-list.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Collection list left</span>
-                                  </a>
-                                </li>
-                                <li class="productsupmenu-li">
-                                  <a href="collection-list-right.html" class="productsuplink-title">
-                                    <span class="sp-link-title">Collection list right</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="productlink-li">
-                              <a href="collection.html" class="product-img banner-img banner-hover">
-                                <img src="img/menu/menu-banner-03.jpg" class="img-fluid" alt="menu-banner-03">
-                              </a>
-                            </li>
-                            <li class="productlink-li">
-                              <a href="collection.html" class="product-img banner-img banner-hover">
-                                <img src="img/menu/menu-banner-04.jpg" class="img-fluid" alt="menu-banner-04">
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+                        
                       </li>
+                     
                       <li class="menu-link">
-                        <a href="collection.html" class="link-title">
-                          <span class="sp-link-title">Collection</span>
-                          <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
+                        <a href="{{route("contact")}}" class="link-title">
+                          <span class="sp-link-title">Contact</span>
                         </a>
-                        <a href="#single-collapse" data-bs-toggle="collapse" class="link-title link-title-lg">
-                          <span class="sp-link-title">Collection</span>
-                          <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                        </a>
-                        <div class="menu-dropdown banner-menu collapse" id="single-collapse">
-                          <ul class="container ul p-0">
-                            <li class="collectionlink-li">
-                              <a href="product-template.html" class="collectionlink-title">
-                                <span class="sp-link-title">Aluminum foil</span>
-                              </a>
-                              <a href="#collectionsup-collapse-1" data-bs-toggle="collapse"
-                                class="collectionlink-title collectionlink-title-lg">
-                                <span class="sp-link-title">Aluminum foil</span>
-                                <span class="menu-arrow"><i class="feather-plus"></i></span>
-                              </a>
-                              <ul class="collectionsupmenu-dropdown collapse" id="collectionsup-collapse-1">
-                                <li class="collectionsupmenu-li">
-                                  <a href="product-template.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Stripping pliers</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="product-template2.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Packet box ST</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="product-template3.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Stapler pin SD09 </span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="collectionlink-li">
-                              <a href="product-template4.html" class="collectionlink-title">
-                                <span class="sp-link-title">Khaki cello taps</span>
-                              </a>
-                              <a href="#collectionsup-collapse-2" data-bs-toggle="collapse"
-                                class="collectionlink-title collectionlink-title-lg">
-                                <span class="sp-link-title">Khaki cello taps</span>
-                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                              </a>
-                              <ul class="collectionsupmenu-dropdown collapse" id="collectionsup-collapse-2">
-                                <li class="collectionsupmenu-li">
-                                  <a href="product-template5.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Glue gun 87TRS0</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="product-template6.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Fevicol SR gum</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="product-template7.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Cutter knife 8mm</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="collectionlink-li">
-                              <a href="blog-grid-without.html" class="collectionlink-title">
-                                <span class="sp-link-title">Blog post</span>
-                              </a>
-                              <a href="#collectionsup-collapse-3" data-bs-toggle="collapse"
-                                class="collectionlink-title collectionlink-title-lg">
-                                <span class="sp-link-title">Blog post</span>
-                                <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                              </a>
-                              <ul class="collectionsupmenu-dropdown collapse" id="collectionsup-collapse-3">
-                                <li class="collectionsupmenu-li">
-                                  <a href="article-post.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">News</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="article-post-right.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">News right</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="article-post-without.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">News without</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="collectionlink-li">
-                              <a href="product-template.html" class="collectionlink-title">
-                                <span class="sp-link-title">Stapler pin</span>
-                              </a>
-                              <a href="#collectionsup-collapse-4" data-bs-toggle="collapse"
-                                class="collectionlink-title collectionlink-title-lg">
-                                <span class="sp-link-title">Stapler pin</span>
-                                <span class="menu-arrow"><i class="feather-plus"></i></span>
-                              </a>
-                              <ul class="collectionsupmenu-dropdown collapse" id="collectionsup-collapse-4">
-                                <li class="collectionsupmenu-li">
-                                  <a href="" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Scissors</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="product-template2.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Card bag</span>
-                                  </a>
-                                </li>
-                                <li class="collectionsupmenu-li">
-                                  <a href="collection.html" class="collectionsuplink-title">
-                                    <span class="sp-link-title">Stapler pin</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="bannermenu-li">
-                              <a href="product-template3.html" class="collection-img banner-img banner-hover">
-                                <img src="img/menu/menu-banner-05.jpg" class="img-fluid" alt="menu-banner-05">
-                              </a>
-                            </li>
-                            <li class="bannermenu-li">
-                              <a href="collection.html" class="collection-img banner-img banner-hover">
-                                <img src="img/menu/menu-banner-06.jpg" class="img-fluid" alt="menu-banner-06">
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="menu-link">
-                        <a href="blog-grid.html" class="link-title">
-                          <span class="sp-link-title">Blogs</span>
-                          <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                        </a>
-                        <a href="#desk-single-blog" data-bs-toggle="collapse" class="link-title link-title-lg">
-                          <span class="sp-link-title">Blogs</span>
-                          <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                        </a>
-                        <ul class="menu-dropdown single-menu collapse" id="desk-single-blog">
-                          <li class="singlemenu-li">
-                            <a href="blog-grid-without.html" class="singlelink-title">
-                              <span class="sp-link-title">Blog grid</span>
-                            </a>
-                          </li>
-                          <li class="singlemenu-li">
-                            <a href="blog-grid.html" class="singlelink-title">
-                              <span class="sp-link-title">Blog grid left</span>
-                            </a>
-                          </li>
-                          <li class="singlemenu-li">
-                            <a href="blog-grid-right.html" class="singlelink-title">
-                              <span class="sp-link-title">Blog grid right</span>
-                            </a>
-                          </li>
-                          <li class="singlemenu-li">
-                            <a href="article-post-without.html" class="singlelink-title">
-                              <span class="sp-link-title">Article post</span>
-                            </a>
-                          </li>
-                          <li class="singlemenu-li">
-                            <a href="article-post.html" class="singlelink-title">
-                              <span class="sp-link-title">Article post left</span>
-                            </a>
-                          </li>
-                          <li class="singlemenu-li">
-                            <a href="article-post-right.html" class="singlelink-title">
-                              <span class="sp-link-title">Article post right</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-link">
-                        <a href="about-us.html" class="link-title">
-                          <span class="sp-link-title">Pages</span>
-                          <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
-                        </a>
-                        <a href="#desk-pages" class="link-title link-title-lg" data-bs-toggle="collapse">
+                        {{-- <a href="#desk-pages" class="link-title link-title-lg" data-bs-toggle="collapse">
                           <span class="sp-link-title">Pages</span>
                           <span class="menu-arrow"><i class="feather-chevron-down"></i></span>
                         </a>
@@ -692,7 +384,7 @@
                               </a>
                             </li>
                           </ul>
-                        </div>
+                        </div> --}}
                       </li>
                     </ul>
                   </div>

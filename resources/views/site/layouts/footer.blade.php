@@ -9,7 +9,7 @@
                   <li class="ftlink-li footer-company-details">
                     <div class="footer-logo">
                       <a href="index.html" class="theme-footer-logo">
-                        <img src="img/logo/logo.png" class="img-fluid" alt="logo">
+                        <img src="https://fplogoimages.withfloats.com/tile/5d64d4075a899b000169014c.jpeg" width="60px" class="img-fluid" alt="logo">
                       </a>
                     </div>
                     <div class="footer-details">

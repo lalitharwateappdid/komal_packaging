@@ -325,7 +325,7 @@
         </section>
 
         {{-- about section --}}
-        <section class="container">
+        <section class="container py-5">
             <div class="row">
                 <div class="col-lg-6">
                     <img class="img-fluid rounded" src="{{ asset('assets/img/app/komal.jpg') }}" alt="komal">
@@ -335,7 +335,7 @@
                     <p>Best Manufacturer of Plastic Bottle in Mumbai, Maharashtra | Best Manufacturer of Pet Container in
                         Mumbai, Maharashtra | Best Manufacturer of Plastic Jar in Mumbai, Maharashtra | Manufacturer,
                         Exporter, Supplier and Trader of qua...</p>
-                    <a href="">Read More</a>
+                    <a  href="{{route("about")}}">Read More</a>
                 </div>
             </div>
         </section>
