@@ -2815,7 +2815,7 @@ a.search-popup.search-popup-lg {
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: url(../img/slider/slider-text-bg.png);
+  /* background-image: url(../img/slider/slider-text-bg.png);  */
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
